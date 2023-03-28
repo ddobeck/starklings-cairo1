@@ -4,7 +4,6 @@
 // Make me compile and pass the test!
 // Execute `starklings hint arrays1` or use the `hint` watch subcommand for a hint.
 
-
 use array::ArrayTrait;
 use option::OptionTrait;
 

@@ -4,10 +4,17 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(num_apples: felt) -> felt {
+    if num_apples > 40 {
+        return num_apples * 2;
+    } 
+    else {
+        return num_apples * 3;
+    }
+
+}
 
 
 // Do not change the tests!
@@ -18,8 +25,8 @@ fn verify_test() {
     let price3 = calculate_price_of_apples(41);
     let price4 = calculate_price_of_apples(65);
 
-    assert(105 == price1);
-    assert(120 == price2);
-    assert(82 == price3);
-    assert(130 == price4);
+    assert(105 == price1, '35 apples == 105 cbucks');
+    assert(120 == price2, '40 apples == 120 cbucks');
+    assert(82 == price3, '41 apples == 82 cbucks');
+    assert(130 == price4, '65 apples == 130 cbucks');
 }
